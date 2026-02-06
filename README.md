@@ -56,16 +56,19 @@ npm install
 Run backend and frontend in parallel (from repo root):
 
 ```bash
-# run backend
+# run both services together (recommended)
+npm run dev
+
+# or run backend only
 cd backend
 npm run dev
 
 # in a second terminal, run frontend
 cd ../frontend
-npm start
+npm run dev
 ```
 
-Then open http://localhost:3000 to see the app.
+Then open http://localhost:5173 to see the app.
 
 ---
 

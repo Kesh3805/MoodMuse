@@ -4,13 +4,14 @@
   "description": "\"# MoodMuse\\n\\nSee MoodMuse.txt for vision and features.\"",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "nodemon": "^3.1.10"
   }
 }
